@@ -44,22 +44,22 @@
 // System.Console.WriteLine($"{total}");
 
 
-// int[] groupIds = { 101, 104, 107, 104, 110 };
-// bool hasDuplicates = false;
+int[] groupIds = { 101, 104, 107, 104, 110 };
+bool hasDuplicates = false;
 
-// for (int i = 0; i < groupIds.Length; i++)
-// {
-//     for (int j = i + 1; j < groupIds.Length; j++)
-//     {
-//         if (groupIds[i] == groupIds[j])
-//         {
-//             hasDuplicates = true;
-//             System.Console.WriteLine($"{ groupIds[i]}, {groupIds[j]}");
-//             break;
-//         }
-//     }
-// }
-// System.Console.WriteLine(hasDuplicates ? "Есть повторяющиеся номера" : "Все номера уникальны"); // задание 4
+for (int i = 0; i < groupIds.Length; i++)
+{
+    for (int j = i + 1; j < groupIds.Length; j++)
+    {
+        if (groupIds[i] == groupIds[j])
+        {
+            hasDuplicates = true;
+            System.Console.WriteLine($"{ groupIds[i]}, {groupIds[j]}");
+            break;
+        }
+    }
+}
+System.Console.WriteLine(hasDuplicates ? "Есть повторяющиеся номера" : "Все номера уникальны"); // задание 4
 
 // int days = 5;
 // int lessonsPerDay = 6;
@@ -208,23 +208,23 @@
 // }
 
 
-System.Console.WriteLine();
-System.Console.WriteLine("Задание 10");
+// System.Console.WriteLine();
+// System.Console.WriteLine("Задание 10");
 
-int porog = 100;
-int a = 1;
-int b = 1;
-int sochran = a;
+// int porog = 100;
+// int a = 1;
+// int b = 1;
+// int sochran = a;
 
-while (true)
-{
-    if (sochran > porog)
-    {
-        break;
-    }
-    sochran = a + b;
-    a = b;
-    b = sochran;
-}
-System.Console.WriteLine(sochran);
+// while (true)
+// {
+//     if (sochran > porog)
+//     {
+//         break;
+//     }
+//     sochran = a + b;
+//     a = b;
+//     b = sochran;
+// }
+// System.Console.WriteLine(sochran);
 
